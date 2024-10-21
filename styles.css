@@ -71,8 +71,6 @@ nav ul li a:hover {
 .tsection {
     padding: 150px 0; /* Reduced padding for less space between sections */
     text-align: center;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
 }
 
 .section-divider {
@@ -210,13 +208,16 @@ nav ul li a:hover {
 /* Adjust size and styling for school and education details */
 .school-subheading {
     font-size: 20px;
-    font-style: italic;
     margin-bottom: 5px;
+    font-style: bold;
+
 }
 
 .education-info {
     font-size: 16px; /* Slightly smaller subheading for year, major, GPA */
     color: #f5f5f5;
+    font-style: italic;
+
 }
 
 
