@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #101010;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+nav {
+    background: #181818;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav h1 {
+    color: #f5f5f5;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ccff;
+}
+
+.section {
+    padding: 20px 0; /* Reduced padding for less space between sections */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.csection {
+    padding: 0px 0; /* Reduced padding for less space between sections */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.tsection {
+    padding: 150px 0; /* Reduced padding for less space between sections */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.section-divider {
+    height: 2px;
+    background-color: #2a2a2a;
+    margin: 20px 0;
+}
+
+.section-visible {
+    opacity: 1;
+}
+
+.section-title {
+    font-size: 38px;
+    margin-bottom: 20px; /* Adjusted margin */
+    color: #00ccff;
+}
+
+
+#about p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Reduced size for relevant coursework subheading */
+.year-subheading {
+    font-size: 28px;
+    color: #00ccff;
+    margin: 40px 0 30px;
+}
+
+/* Grid for timeline items, side by side */
+#timeline .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures grid layout */
+    gap: 20px;
+    justify-items: center;
+}
+
+.timeline-item {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease-out;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-content h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #00ccff;
+}
+
+.timeline-content p, ul {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00ccff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #008dbf;
+}
+
+#skills .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    background: #2a2a2a;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    background-color: #00ccff;
+    color: #fff;
+}
+
+/* Updated Education section */
+.school-subheading {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Flexbox for education items */
+.education-items {
+    display: flex;
+    justify-content: space-between; /* Space between the education blocks */
+    gap: 20px; /* Add gap between each education block */
+}
+
+.education-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Adjust size and styling for school and education details */
+.school-subheading {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.education-info {
+    font-size: 16px; /* Slightly smaller subheading for year, major, GPA */
+    color: #f5f5f5;
+}
+
+
+.education-info {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px; /* Slightly smaller subheading for year, major, GPA */
+    color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+/* Matrix-style layout for coursework */
+#education .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-item {
+    background: #2a2a2a;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-item:hover {
+    transform: scale(1.05);
+    background-color: #00ccff;
+    color: #fff;
+}
+
+/* Contact section updates */
+#contact p a {
+    color: #00ccff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#contact p {
+    margin: 20px 0;
+}
+
+/* Flexbox for contact items */
+.contact-items {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Adjust the spacing between items as needed */
+    margin-bottom: 20px;
+}
+
+.contact-items p {
+    margin: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-visible {
+    opacity: 1;
+}
