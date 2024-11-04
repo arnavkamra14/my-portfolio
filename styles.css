@@ -21,6 +21,23 @@ body {
     text-align: center;
 }
 
+.education-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.school-logo {
+    width: 50px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 15px; /* Spacing between logo and text */
+}
+
+.school-details {
+    display: flex;
+    flex-direction: column;
+}
+
 nav {
     background: #181818;
     position: fixed;
@@ -195,6 +212,7 @@ nav ul li a:hover {
 .education-items {
     display: flex;
     justify-content: space-between; /* Space between the education blocks */
+    align-items: center;
     gap: 20px; /* Add gap between each education block */
 }
 
